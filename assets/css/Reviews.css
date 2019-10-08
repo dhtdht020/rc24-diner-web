@@ -1,0 +1,94 @@
+a {
+  text-decoration: none;
+  color: #29AEE3;
+}
+
+a:hover {
+  color: #29AEE3;
+  text-decoration: underline;
+}
+
+@media (max-width:767px) {
+  .yelp_review {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    height: 360px;
+    background-color: #FFF;
+    padding: 15px;
+  }
+}
+
+@media (min-width:768px) {
+  .yelp_review {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    height: 360px;
+    background-color: #FFF;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .yelp_review {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    height: 320px;
+    background-color: #FFF;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .yelp_review {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    height: 300px;
+    background-color: #FFF;
+    padding: 15px;
+  }
+}
+
+.yelp_review h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(237,67,62);
+}
+
+.yelp_review h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #333;
+}
+
+.yelp_first {
+  width: 50%;
+  float: left;
+}
+
+.yelp_basic {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 10px;
+}
+
+.yelp_star {
+  float: right;
+  height: 20px;
+  margin-right: 2px;
+  width: auto;
+}
+
+.yelp_descript {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
