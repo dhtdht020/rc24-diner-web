@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>RiiConnect24 Diner</title>
+    <meta property="og:description" content="We make shutterburgers.">
+    <meta property="og:type" content="website">
+    <meta name="description" content="We make shutterburgers.">
+    <meta property="og:title" content="RiiConnect24 Diner">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Data-Table-with-Search-Sort-Filter-and-Zoom-using-TableSorter.css">
+    <link rel="stylesheet" href="assets/css/FAQ-Frequentlly-Asked-Questions-1.css">
+    <link rel="stylesheet" href="assets/css/FAQ-Frequentlly-Asked-Questions.css">
+    <link rel="stylesheet" href="assets/css/Features-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Reviews.css">
+    <link rel="stylesheet" href="assets/css/Shop-item-1.css">
+    <link rel="stylesheet" href="assets/css/Shop-item.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Testimonials.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+        <div class="container-fluid"><a class="navbar-brand" href="index.html">RiiConnect24 Diner</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link active text-white-50" href="index.html">Shutterburgers</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://twitter.com/hicdrink">Hi-C</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-white-50" href="laitaliano.html">La Italiano</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-white-50" href="shameboard.html">Shameboard</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-white-50" href="larsendreams.html">Larsen's Dreams<br></a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <h2 style="margin: 11px;">Larsen's Dreams Database WORK IN PROGRESS</h2>
+    <div></div>
+    <div style="height: 244px;">
+        <div class="container">
+            <div class="card" id="TableSorterCard" style="margin: -5px;padding: 10px;">
+                <div class="row table-topper align-items-center">
+                    <div class="col-4 text-left" style="margin: 0px;padding: 5px 15px;"><button class="btn btn-primary btn-sm reset" type="button" style="padding: 5px;margin: 2px;">Reset Filters</button><button class="btn btn-warning btn-sm" id="zoom_in" type="button" zoomclick="ChangeZoomLevel(-10);" style="padding: 5px;margin: 2px;"><i class="fa fa-search-plus"></i></button>
+                        <button
+                            class="btn btn-warning btn-sm" id="zoom_out" type="button" zoomclick="ChangeZoomLevel(-10);" style="padding: 5px;margin: 2px;"><i class="fa fa-search-minus"></i></button>
+                    </div>
+                    <div class="col-4 text-center" style="margin: 0px;padding: 5px 10px;">
+                        <h6 id="counter">Showing: <strong id="rowCount">ALL</strong>&nbsp;Dream(s)</h6>
+                    </div>
+                    <div class="col-4 text-right" style="margin: 0px;padding: 5px 10px;"><a href="#" data-toggle="modal" data-target="#tablehelpModal"><i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="Custom Sort Details" aria-hidden="true" style="padding: 5px 15px;margin: 2px;"></i></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <table class="table table tablesorter" id="ipi-table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th style="width: 20%;">Date</th>
+                                        <th class="sorter-false">Dream</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>June 16th, 2019<br></td>
+                                        <td>I had a dream about Swapdoodle last night<br>I was at school and there was some cool stuff<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>June 12th, 2019<br></td>
+                                        <td>I had a dream last night that Discord was shutting down, I was very sad.<br>Apparently Nintendo owned Discord at this point. I woke up and I said "Thank fuck"<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>June 6th, 2019<br></td>
+                                        <td>So I had an interesting dream last night. It might have stemmed from the fact that my school's cheer team seems to be getting 2 male cheerleaders this upcoming year, I haven't confirmed it but it looks like it's
+                                            happening as seen on a tweet (there was a male cheerleader last year for the first time in like 13 years, but he was probably falsely expelled for using drugs that he probably didn't use).<br><br>I was in the
+                                            school and saw 2 other male cheerleaders, one seemed to be a kid with special needs (autism or something). I was inspired when I saw this Asian girl do back flips to reach the top of a fire extinguisher mount
+                                            (one of the back flips required her to jump to get to it). Then she tweaked a bit I guess. I was inspired and I was like "I want to do that". This was the first day of school and I was a senior, by the way (true
+                                            in real life).<br><br>I also saw these cheer members with names I'm not familiar with, like "line" or "backup". No idea what they meant<br><br>OK, now that I had an inspiration, I went to the place I went to
+                                            Taekwondo at, but quit 12 years ago because my sister was born and we needed a hiatus that turned out to be permanent. It was terrible, and I hated it. It was like practice for dance moves or something? It was
+                                            on a hard gym floor as opposed to the soft mat floor that I remember we had when I was there.<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>May 22nd, 2019<br></td>
+                                        <td>I had an interesting dream last night<br>So I was at someone's house, I didn't know who was living there<br>I turned on their Wii<br>To my surprise, it was fully modded, kind of a mess but RiiConnect24 was installed
+                                            there<br>I tried to do a NAND dump before running off, and I was also trying to write a sticky note saying thanks and give them my Discord<br>I got some SD Card out of my backpack, there were a few of them<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>May 5th, 2019<br></td>
+                                        <td>I had a dream last night that I was auditioning for the new Blue's Clues reboot and assumed I wasn't accepted<br><br>"I have autism, I can't do this"<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>April 30th, 2019<br></td>
+                                        <td>I had a dream that Gunnar sent me friend requests with over 300 alts<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>April 25th, 2019<br></td>
+                                        <td>I had a dream last night that we did a giveaway to like 30 people to give out bells for Animal Crossing<br>It was on a password-protected part of our site<br>It was also a room, it was weird<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>April 19th, 2019<br></td>
+                                        <td>Hey @sks316 I had some sort of dream last night about a super smash bros announcement<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>April 8th, 2019<br></td>
+                                        <td>I had a dream about this video last night<br><a href="https://www.youtube.com/watch?v=H8rKthC6_ns">https://www.youtube.com/watch?v=H8rKthC6_ns</a><br><br>I dreamt that the video got deleted and I was upset<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>April 6th, 2019<br></td>
+                                        <td>I had a dream about #about last night<br>I was browsing it and some dummy posts in it somehow<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>March 19th, 2019<br></td>
+                                        <td>I had a dream I left the Nintendo Homebrew server (already did that) but before that I wrote a message why I did that. No one cared<br><br>I hate that server so much<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>March 16th, 2019<br></td>
+                                        <td>I had a dream last night that I found a video of my school's hot cheerleader team dancing to the CMOC theme<br><br>I should modify a video of our drill team (dance) dancing to the CMOC theme<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>March 1st, 2019<br></td>
+                                        <td>Once i had a dream we ran a question asking if you were gay, which was actually suggested<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>February 25th, 2019<br></td>
+                                        <td>I had a dream I left the Nintendo Homebrew server (already did that) but before that I wrote a message why I did that. No one cared<br><br>I hate that server so much<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>February 12th, 2019<br></td>
+                                        <td>I had a dream I had both the rc24 and what would be the DC24 forecast channel, both showed different forecasts, the DC24 one had locations in the wrong place and included an IRC chat with @tme_michael or something<br></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="tablehelpModal" aria-labeledby="tablehelpModal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Table Filtering Options</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                            <div class="modal-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:1%">Priority</th>
+                                                <th style="width:9%">Operator</th>
+                                                <th style="width:30%">Description</th>
+                                                <th style="width:60%">Examples</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><code>|</code>&nbsp;or&nbsp;&nbsp;<code>OR</code><br></td>
+                                                <td>Logical "or" (Vertical bar). Filter the column for content that matches text from either side of the bar.<br></td>
+                                                <td><code>&lt;20 | &gt;40</code>&nbsp;(matches a column cell with either "&lt;20" or "&gt;40")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><code>&amp;&amp;</code>&nbsp;or <code>AND</code><br></td>
+                                                <td>Logical "and". Filter the column for content that matches text from either side of the operator.<br></td>
+                                                <td><code>&gt;20 &amp;&amp; &gt;40</code>&nbsp;(matches a column cell that contains both "&gt;20" and "&lt;40")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><code>/\d/</code><br></td>
+                                                <td>Add any regex to the query to use in the query ("mig" flags can be included&nbsp;<code>/\w/mig</code>)<br></td>
+                                                <td><code>/b[aeiou]g/i</code>&nbsp;(finds "bag", "beg", "BIG", "Bug", etc);<code>&gt;/r$/</code>&nbsp;(matches text that ends with an "r")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><code>&lt; &lt;= &gt;= &gt;</code><br></td>
+                                                <td>Find alphabetical or numerical values less than or greater than or equal to the filtered query .<br></td>
+                                                <td><code>&lt;=10</code>&nbsp;(find values greater than or equal to 10)<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><code>!</code>&nbsp;or&nbsp;<code>!=</code><br></td>
+                                                <td>Not operator, or not exactly match. Filter the column with content that&nbsp;<strong>do not</strong>&nbsp;match the query. Include an equal (<code>=</code>), single (<code>'</code>) or double quote (<code>"</code>)
+                                                    to exactly&nbsp;<em>not</em>&nbsp;match a filter.<br><br><br></td>
+                                                <td><code>!e</code>&nbsp;(find text that doesn't contain an "e");<code>!"ELISA"</code>&nbsp;(find content that does not exactly match "ELISA")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td><code>"</code>&nbsp;or&nbsp;<code>=</code><br></td>
+                                                <td>To exactly match the search query, add a quote, apostrophe or equal sign to the beginning and/or end of the query<br></td>
+                                                <td><code>abc"</code>&nbsp;or&nbsp;<code>abc=</code>&nbsp;(exactly match "abc")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td><code>-</code>&nbsp;or <code>to</code><br></td>
+                                                <td>Find a range of values. Make sure there is a space before and after the dash (or the word "to").<br></td>
+                                                <td><code>10 - 30</code>&nbsp;or&nbsp;<code>10 to 30</code>&nbsp;(match values between 10 and 30)<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td><code>?</code><br></td>
+                                                <td>Wildcard for a single, non-space character.<br></td>
+                                                <td><code>S?c</code>&nbsp;(finds "Sec" and "Soc", but not "Seec")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td><code>*</code><br></td>
+                                                <td>Wildcard for zero or more non-space characters.<br></td>
+                                                <td><code>B*k</code>&nbsp;(matches "Black" and "Book")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td><code>~</code><br></td>
+                                                <td>Perform a fuzzy search (matches sequential characters) by adding a tilde to the beginning of the query<br></td>
+                                                <td><code>~bee</code>&nbsp;(matches "Bruce Lee" and "Brenda Dexter"), or&nbsp;<code>~piano</code>&nbsp;(matches "Philip Aaron Wong")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>text<br></td>
+                                                <td>Any text entered in the filter will&nbsp;<strong>match</strong>&nbsp;text found within the column<br></td>
+                                                <td><code>abc</code>&nbsp;(finds "abc", "abcd", "abcde", etc);<code>SEC</code>&nbsp;(finds "SEC" and "Analytical SEC")<br></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-danger" type="button" data-dismiss="modal">Close</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Data-Table-with-Search-Sort-Filter-and-Zoom-using-TableSorter.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>
